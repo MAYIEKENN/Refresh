@@ -46,5 +46,5 @@ def process():
     results = asyncio.run(process_numbers())
     return jsonify(results)
 
-if name == 'main':
+if name == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
