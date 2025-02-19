@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import asyncio
 import aiohttp
 
-app = Flask(name)
+app = Flask(__name__)
 
 # API URLs (update these with your actual endpoints)
 FETCH_URL = "https://api.xalyon.xyz/v2/atom/?endpoint=num"
